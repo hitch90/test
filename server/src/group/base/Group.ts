@@ -43,6 +43,14 @@ class Group {
   members?: Array<User>;
 
   @ApiProperty({
+    required: true,
+    type: String,
+  })
+  @IsString()
+  @Field(() => String)
+  name!: string;
+
+  @ApiProperty({
     required: false,
     type: () => [Project],
   })

@@ -27,5 +27,16 @@ class ProjectUpdateInput {
     nullable: true,
   })
   group?: GroupWhereUniqueInput;
+
+  @ApiProperty({
+    required: false,
+    type: String,
+  })
+  @IsString()
+  @IsOptional()
+  @Field(() => String, {
+    nullable: true,
+  })
+  name?: string | null;
 }
 export { ProjectUpdateInput };

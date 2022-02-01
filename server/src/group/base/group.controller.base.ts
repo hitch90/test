@@ -67,6 +67,7 @@ export class GroupControllerBase {
         channelWebhook: true,
         createdAt: true,
         id: true,
+        name: true,
         updatedAt: true,
       },
     });
@@ -108,6 +109,7 @@ export class GroupControllerBase {
         channelWebhook: true,
         createdAt: true,
         id: true,
+        name: true,
         updatedAt: true,
       },
     });
@@ -144,6 +146,7 @@ export class GroupControllerBase {
         channelWebhook: true,
         createdAt: true,
         id: true,
+        name: true,
         updatedAt: true,
       },
     });
@@ -201,6 +204,7 @@ export class GroupControllerBase {
           channelWebhook: true,
           createdAt: true,
           id: true,
+          name: true,
           updatedAt: true,
         },
       });
@@ -238,6 +242,7 @@ export class GroupControllerBase {
           channelWebhook: true,
           createdAt: true,
           id: true,
+          name: true,
           updatedAt: true,
         },
       });
@@ -285,7 +290,6 @@ export class GroupControllerBase {
         createdAt: true,
         firstName: true,
         id: true,
-        lastName: true,
         roles: true,
         updatedAt: true,
         username: true,
@@ -470,6 +474,7 @@ export class GroupControllerBase {
         },
 
         id: true,
+        name: true,
         updatedAt: true,
       },
     });

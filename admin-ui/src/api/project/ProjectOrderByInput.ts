@@ -5,5 +5,6 @@ export type ProjectOrderByInput = {
   gitlabProjects?: SortOrder;
   groupId?: SortOrder;
   id?: SortOrder;
+  name?: SortOrder;
   updatedAt?: SortOrder;
 };

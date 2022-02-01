@@ -20,6 +20,7 @@ export const GroupShow = (props: ShowProps): React.ReactElement => {
         <TextField label="Channel Webhook" source="channelWebhook" />
         <DateField source="createdAt" label="Created At" />
         <TextField label="ID" source="id" />
+        <TextField label="Name" source="name" />
         <DateField source="updatedAt" label="Updated At" />
         <ReferenceManyField
           reference="Project"
@@ -33,6 +34,7 @@ export const GroupShow = (props: ShowProps): React.ReactElement => {
               <TextField source={GROUP_TITLE_FIELD} />
             </ReferenceField>
             <TextField label="ID" source="id" />
+            <TextField label="Name" source="name" />
             <DateField source="updatedAt" label="Updated At" />
           </Datagrid>
         </ReferenceManyField>

@@ -26,6 +26,7 @@ export const ProjectList = (props: ListProps): React.ReactElement => {
           <TextField source={GROUP_TITLE_FIELD} />
         </ReferenceField>
         <TextField label="ID" source="id" />
+        <TextField label="Name" source="name" />
         <DateField source="updatedAt" label="Updated At" />
       </Datagrid>
     </List>

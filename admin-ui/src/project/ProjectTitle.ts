@@ -1,7 +1,7 @@
 import { Project as TProject } from "../api/project/Project";
 
-export const PROJECT_TITLE_FIELD = "id";
+export const PROJECT_TITLE_FIELD = "name";
 
 export const ProjectTitle = (record: TProject): string => {
-  return record.id || record.id;
+  return record.name || record.id;
 };

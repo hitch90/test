@@ -76,6 +76,7 @@ export class ProjectControllerBase {
         },
 
         id: true,
+        name: true,
         updatedAt: true,
       },
     });
@@ -124,6 +125,7 @@ export class ProjectControllerBase {
         },
 
         id: true,
+        name: true,
         updatedAt: true,
       },
     });
@@ -167,6 +169,7 @@ export class ProjectControllerBase {
         },
 
         id: true,
+        name: true,
         updatedAt: true,
       },
     });
@@ -237,6 +240,7 @@ export class ProjectControllerBase {
           },
 
           id: true,
+          name: true,
           updatedAt: true,
         },
       });
@@ -281,6 +285,7 @@ export class ProjectControllerBase {
           },
 
           id: true,
+          name: true,
           updatedAt: true,
         },
       });

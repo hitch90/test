@@ -4,8 +4,8 @@ import { GroupModule } from "./group/group.module";
 import { ProjectModule } from "./project/project.module";
 import { ACLModule } from "./auth/acl.module";
 import { AuthModule } from "./auth/auth.module";
-import { SecretsManagerModule } from "./providers/secrets/secretsManager.module";
 import { HealthModule } from "./health/health.module";
+import { SecretsManagerModule } from "./providers/secrets/secretsManager.module";
 import { MorganModule } from "nest-morgan";
 import { ConfigModule, ConfigService } from "@nestjs/config";
 import { ServeStaticModule } from "@nestjs/serve-static";
@@ -20,8 +20,8 @@ import { GraphQLModule } from "@nestjs/graphql";
     ProjectModule,
     ACLModule,
     AuthModule,
-    SecretsManagerModule,
     HealthModule,
+    SecretsManagerModule,
     MorganModule,
     ConfigModule.forRoot({ isGlobal: true }),
     ServeStaticModule.forRootAsync({

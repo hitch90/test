@@ -6,6 +6,7 @@ export const GroupCreate = (props: CreateProps): React.ReactElement => {
     <Create {...props}>
       <SimpleForm>
         <TextInput label="Channel Webhook" source="channelWebhook" />
+        <TextInput label="Name" source="name" />
       </SimpleForm>
     </Create>
   );
