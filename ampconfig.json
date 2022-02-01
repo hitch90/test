@@ -1,0 +1,19 @@
+{
+  "dataServiceGeneratorVersion": "0.11.1",
+  "appInfo": {
+    "name": "STS Helper",
+    "description": "",
+    "version": "cne5fhs1",
+    "id": "ckz42a4g5144328701s6kshsbrfs",
+    "url": "https://app.amplication.com/ckz42a4g5144328701s6kshsbrfs",
+    "settings": {
+      "dbHost": "localhost",
+      "dbName": "",
+      "dbPassword": "admin",
+      "dbPort": 5432,
+      "dbUser": "admin",
+      "appId": "ckz42a4g5144328701s6kshsbrfs",
+      "authProvider": "Jwt"
+    }
+  }
+}
