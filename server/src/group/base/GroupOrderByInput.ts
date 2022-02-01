@@ -41,6 +41,15 @@ class GroupOrderByInput {
   @Field(() => SortOrder, {
     nullable: true,
   })
+  name?: SortOrder;
+
+  @ApiProperty({
+    required: false,
+    enum: ["Asc", "Desc"],
+  })
+  @Field(() => SortOrder, {
+    nullable: true,
+  })
   updatedAt?: SortOrder;
 }
 

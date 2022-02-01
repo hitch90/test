@@ -6,6 +6,7 @@ export const GroupEdit = (props: EditProps): React.ReactElement => {
     <Edit {...props}>
       <SimpleForm>
         <TextInput label="Channel Webhook" source="channelWebhook" />
+        <TextInput label="Name" source="name" />
       </SimpleForm>
     </Edit>
   );

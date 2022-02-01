@@ -17,6 +17,7 @@ export const ProjectEdit = (props: EditProps): React.ReactElement => {
         <ReferenceInput source="group.id" reference="Group" label="Group">
           <SelectInput optionText={GroupTitle} />
         </ReferenceInput>
+        <TextInput label="Name" source="name" />
       </SimpleForm>
     </Edit>
   );

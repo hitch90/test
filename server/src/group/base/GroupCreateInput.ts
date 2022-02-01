@@ -13,5 +13,13 @@ class GroupCreateInput {
     nullable: true,
   })
   channelWebhook?: string | null;
+
+  @ApiProperty({
+    required: true,
+    type: String,
+  })
+  @IsString()
+  @Field(() => String)
+  name!: string;
 }
 export { GroupCreateInput };

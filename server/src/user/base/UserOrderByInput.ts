@@ -41,15 +41,6 @@ class UserOrderByInput {
   @Field(() => SortOrder, {
     nullable: true,
   })
-  lastName?: SortOrder;
-
-  @ApiProperty({
-    required: false,
-    enum: ["Asc", "Desc"],
-  })
-  @Field(() => SortOrder, {
-    nullable: true,
-  })
   password?: SortOrder;
 
   @ApiProperty({

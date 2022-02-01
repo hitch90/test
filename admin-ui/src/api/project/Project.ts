@@ -5,5 +5,6 @@ export type Project = {
   gitlabProjects: string;
   group?: Group;
   id: string;
+  name: string | null;
   updatedAt: Date;
 };

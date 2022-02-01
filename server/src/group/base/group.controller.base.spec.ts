@@ -14,12 +14,14 @@ const CREATE_INPUT = {
   channelWebhook: "exampleChannelWebhook",
   createdAt: new Date(),
   id: "exampleId",
+  name: "exampleName",
   updatedAt: new Date(),
 };
 const CREATE_RESULT = {
   channelWebhook: "exampleChannelWebhook",
   createdAt: new Date(),
   id: "exampleId",
+  name: "exampleName",
   updatedAt: new Date(),
 };
 const FIND_MANY_RESULT = [
@@ -27,6 +29,7 @@ const FIND_MANY_RESULT = [
     channelWebhook: "exampleChannelWebhook",
     createdAt: new Date(),
     id: "exampleId",
+    name: "exampleName",
     updatedAt: new Date(),
   },
 ];
@@ -34,6 +37,7 @@ const FIND_ONE_RESULT = {
   channelWebhook: "exampleChannelWebhook",
   createdAt: new Date(),
   id: "exampleId",
+  name: "exampleName",
   updatedAt: new Date(),
 };
 

@@ -6,6 +6,7 @@ export type Group = {
   createdAt: Date;
   id: string;
   members?: Array<User>;
+  name: string;
   projects?: Array<Project>;
   updatedAt: Date;
 };
