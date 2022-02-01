@@ -1,0 +1,38 @@
+datasource postgres {
+  provider = "postgresql"
+  url      = env("POSTGRESQL_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  createdAt DateTime @default(now())
+  firstName String?
+  groups    Group[]
+  id        String   @id @default(cuid())
+  lastName  String?
+  password  String
+  roles     String[]
+  updatedAt DateTime @updatedAt
+  username  String   @unique
+}
+
+model Group {
+  channelWebhook String?
+  createdAt      DateTime  @default(now())
+  id             String    @id @default(cuid())
+  members        User[]
+  projects       Project[]
+  updatedAt      DateTime  @updatedAt
+}
+
+model Project {
+  createdAt      DateTime @default(now())
+  gitlabProjects String
+  group          Group    @relation(fields: [groupId], references: [id])
+  groupId        String
+  id             String   @id @default(cuid())
+  updatedAt      DateTime @updatedAt
+}
